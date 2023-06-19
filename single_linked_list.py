@@ -34,7 +34,15 @@ while True:
             p = p.next 
 
     elif choice == 3:
-        pass
+        p = head 
+        while p.next !=None:
+            p=p.next 
+
+        q = head 
+        while q.next != p:
+            q=q.next    
+        q.next = None 
+        del p 
 
     elif choice == 0:
         exit(0)

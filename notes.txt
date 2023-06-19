@@ -42,7 +42,19 @@ linked list -->
             2) node->next address None 
 
 
+task:-> 
+    insert beg 
 
+    10  20  30  40  50 
+    insertbeg 
+    60
+    60  10  20  30  40  50  
+
+    deleteBeg 
+    60  10  20  30  40  50  
+    deleteBeg 
+    10  20  30  40  50  
+    
 
 
 
