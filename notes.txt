@@ -1,0 +1,50 @@
+simple queue 
+
+
+
+
+q = 0   1   2   3   4 
+    60      30  40  50   
+    r        f          
+
+       insert -> queue is full  r==size-1      
+
+       circular queue -> 
+
+       static array -> array 
+
+       list->
+
+       30  40  50 60  
+       f          r 
+
+
+------------------------------------------------
+linked list --> 
+
+            10 => 1 2 3 4 5 6 
+            15 => 1 2 3 4 5 6 7 8 9 10
+            30 =>  
+
+            add -> allocate 
+            delete -> release 
+
+            1 2 3 4 5 6 => 
+
+
+            2000         5000         2500         4500         5500
+            10|5000      20|2500      30|4500      40|5500      50|None 
+            head             
+
+            data -> node -> { data | next }
+            
+            1) head 
+            2) node->next address None 
+
+
+
+
+
+
+
+
