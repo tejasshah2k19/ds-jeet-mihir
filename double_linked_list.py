@@ -2,7 +2,7 @@ class Node:
     def __init__(self):
         self.data = 0
         self.next = None 
-
+        self.prev = None 
 
 
 head = None 
@@ -17,6 +17,7 @@ while True:
             num = int(input("Enter number"))  
             head.data = num 
             head.next = None 
+            head.prev = None 
         else:
             num = int(input("Enter number"))  
             tmp = Node()
@@ -26,6 +27,7 @@ while True:
             while p.next != None: 
                 p = p.next 
             p.next = tmp 
+            tmp.prev = p 
 
     elif choice == 2:
         p = head

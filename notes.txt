@@ -60,3 +60,66 @@ task:->
 
 
 
+double linked list ->
+
+    3 insert 
+    3 delete 
+    2 display  { forward and backward }
+    sort the list in ascending order 
+
+l1 ->
+
+l2 -> 
+
+l3 -> l1.head -> last -> next -> l2 
+
+
+non linear ds --> 
+
+    tree | Graph 
+
+
+            MainServer 
+
+    in                      Us 
+K  M   D                 N  L   T
+
+
+
+
+
+
+tree -> binary tree ->    node {child -> { 0 ,1 ,2 }} {max 2 child}
+            1)BST  
+            2)AVL 
+            3)BTRee {multiple child-ll} 
+            
+
+            BST:- 1)binary tree {0,1,2}
+                  2)parent node -> left small ,right big 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
