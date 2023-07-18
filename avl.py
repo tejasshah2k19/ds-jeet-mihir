@@ -17,6 +17,28 @@ class Node:
 root = None 
 
  
+def leftRotate(root):
+    rr = root.right 
+    left = rr.left 
+    
+    rr.left = root 
+    root.right = left 
+
+    root.height = 1 + calculateHeight(root)
+    rr.height = 1+calculateHeight(rr) 
+
+    return rr 
+
+def rightRotate(root):
+    ll = root.left 
+    right = ll.right 
+    ll.right = root 
+    root.left = right 
+
+    root.height = 1 + calculateHeight(root)
+    ll.height =   1 + calculateHeight(ll)
+    return ll 
+    
 
 def addNode(root,data): #100,200 
     if root == None:
@@ -36,18 +58,22 @@ def addNode(root,data): #100,200
 
     if bf < -1 and root.right.data < data :
         #RR 
-        print("RR ",root.data)
+        print("RR ",root.data) 
+        return leftRotate(root)
     elif bf < -1 and root.right.data > data :
         #RL
         print("RL",root.data) 
+        #rightRotate()
+        #return leftRotate()
     elif bf > 1 and root.left.data > data:
         #LL
         print("LL",root.data) 
+        return rightRotate(root)
     elif bf > 1 and root.left.data < data :
         #LR 
         print("LR",root.data)
-     
-    
+        #leftRotate()
+        #return rightRotate()
     return root 
 
 def calculateHeight(root):
