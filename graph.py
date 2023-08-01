@@ -21,4 +21,4 @@ for i in range(0,totalVertex):# 0 1 2 3 4 5
     for edge in list:# source:0 destination:1 cost:5 
         if edge.get("source") == i:
             print(edge.get("destination"),end=" ") 
-            
+ 
